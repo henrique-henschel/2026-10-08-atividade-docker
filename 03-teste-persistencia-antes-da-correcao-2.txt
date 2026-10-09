@@ -1,0 +1,43 @@
+### ANTES do down: GET /api/inscricoes
+[
+  {
+    "eventoId": 1,
+    "nome": "230949412-TESTE",
+    "criadaEm": "2026-10-09T00:48:17.221Z"
+  }
+]
+
+### docker compose down
+ Container turma-a-portal-1 Stopping 
+ Container turma-a-portal-1 Stopped 
+ Container turma-a-portal-1 Removing 
+ Container turma-a-portal-1 Removed 
+ Container turma-a-api-1 Stopping 
+ Container turma-a-api-1 Stopped 
+ Container turma-a-api-1 Removing 
+ Container turma-a-api-1 Removed 
+ Network turma-a_default Removing 
+ Network turma-a_default Removed 
+
+### docker compose up -d
+ Network turma-a_default Creating 
+ Network turma-a_default Creating 
+ Network turma-a_default Created 
+ Network turma-a_default Created 
+ Container turma-a-api-1 Creating 
+ Container turma-a-api-1 Created 
+ Container turma-a-portal-1 Creating 
+ Container turma-a-portal-1 Created 
+ Container turma-a-api-1 Starting 
+ Container turma-a-api-1 Started 
+ Container turma-a-portal-1 Starting 
+ Container turma-a-portal-1 Started 
+
+### DEPOIS do up: GET /api/inscricoes
+[]
+
+### DEPOIS do up: ls /app/registros na api
+total 8
+drwxr-xr-x    2 root     root          4096 Oct  9 00:37 .
+drwxr-xr-x    1 root     root          4096 Oct  9 00:48 ..
+

@@ -1,0 +1,140 @@
+### docker compose config --quiet (valida o YAML)
+
+### docker compose up -d
+ Container turma-a-portal-1 Running 
+ Volume turma-a_registros Creating 
+ Volume turma-a_registros Creating 
+ Volume turma-a_registros Created 
+ Volume turma-a_registros Created 
+ Container turma-a-api-1 Recreate 
+ Container turma-a-api-1 Recreated 
+ Container turma-a-api-1 Starting 
+ Container turma-a-api-1 Started 
+
+### POST inscricao 230949412-TESTE evento 1
+HTTP/1.1 201 Created
+Server: nginx/1.31.6
+Date: Fri, 09 Oct 2026 00:49:05 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+
+{
+  "eventoId": 1,
+  "nome": "230949412-TESTE",
+  "criadaEm": "2026-10-09T00:49:05.610Z"
+}
+
+### GET /api/eventos (evento 1 deve ter restantes 11)
+{
+  "turma": "A",
+  "total": 3,
+  "itens": [
+    {
+      "id": 1,
+      "nome": "Oficina de Git",
+      "vagas": 12,
+      "inscritos": 1,
+      "restantes": 11
+    },
+    {
+      "id": 2,
+      "nome": "Laboratório de APIs",
+      "vagas": 8,
+      "inscritos": 0,
+      "restantes": 8
+    },
+    {
+      "id": 3,
+      "nome": "Encontro de projetos",
+      "vagas": 20,
+      "inscritos": 0,
+      "restantes": 20
+    }
+  ]
+}
+
+### GET /api/inscricoes ANTES do down
+[
+  {
+    "eventoId": 1,
+    "nome": "230949412-TESTE",
+    "criadaEm": "2026-10-09T00:49:05.610Z"
+  }
+]
+
+### docker compose down
+ Container turma-a-portal-1 Stopping 
+ Container turma-a-portal-1 Stopped 
+ Container turma-a-portal-1 Removing 
+ Container turma-a-portal-1 Removed 
+ Container turma-a-api-1 Stopping 
+ Container turma-a-api-1 Stopped 
+ Container turma-a-api-1 Removing 
+ Container turma-a-api-1 Removed 
+ Network turma-a_default Removing 
+ Network turma-a_default Removed 
+
+### docker compose up -d
+ Network turma-a_default Creating 
+ Network turma-a_default Creating 
+ Network turma-a_default Created 
+ Network turma-a_default Created 
+ Container turma-a-api-1 Creating 
+ Container turma-a-api-1 Created 
+ Container turma-a-portal-1 Creating 
+ Container turma-a-portal-1 Created 
+ Container turma-a-api-1 Starting 
+ Container turma-a-api-1 Started 
+ Container turma-a-portal-1 Starting 
+ Container turma-a-portal-1 Started 
+
+### GET /api/inscricoes DEPOIS do up
+[
+  {
+    "eventoId": 1,
+    "nome": "230949412-TESTE",
+    "criadaEm": "2026-10-09T00:49:05.610Z"
+  }
+]
+
+### GET /api/eventos DEPOIS do up
+{
+  "turma": "A",
+  "total": 3,
+  "itens": [
+    {
+      "id": 1,
+      "nome": "Oficina de Git",
+      "vagas": 12,
+      "inscritos": 1,
+      "restantes": 11
+    },
+    {
+      "id": 2,
+      "nome": "Laboratório de APIs",
+      "vagas": 8,
+      "inscritos": 0,
+      "restantes": 8
+    },
+    {
+      "id": 3,
+      "nome": "Encontro de projetos",
+      "vagas": 20,
+      "inscritos": 0,
+      "restantes": 20
+    }
+  ]
+}
+
+### docker volume ls
+DRIVER    VOLUME NAME
+local     turma-a_registros
+
+### docker compose ps (criterio 4: api sem porta publicada)
+NAME               IMAGE            COMMAND                  SERVICE   CREATED         STATUS         PORTS
+turma-a-api-1      turma-a-api      "docker-entrypoint.s…"   api       5 seconds ago   Up 4 seconds   4000/tcp
+turma-a-portal-1   turma-a-portal   "/docker-entrypoint.…"   portal    5 seconds ago   Up 4 seconds   127.0.0.1:8082->80/tcp
+
+### acesso direto a API pelo PC deve falhar
+ (exit 7)

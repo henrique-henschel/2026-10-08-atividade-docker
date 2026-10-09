@@ -1,0 +1,316 @@
+### docker compose up -d --build
+ Image turma-a-api Building 
+ Image turma-a-portal Building 
+#1 [internal] load local bake definitions
+#1 reading from stdin 969B done
+#1 DONE 0.0s
+
+#2 [portal internal] load build definition from Dockerfile
+#2 transferring dockerfile: 186B done
+#2 DONE 0.0s
+
+#3 [api internal] load build definition from Dockerfile
+#3 transferring dockerfile: 169B done
+#3 DONE 0.0s
+
+#4 [api internal] load metadata for docker.io/library/node:24-alpine
+#4 ...
+
+#5 [portal internal] load metadata for docker.io/library/nginx:alpine
+#5 DONE 3.3s
+
+#4 [api internal] load metadata for docker.io/library/node:24-alpine
+#4 DONE 3.3s
+
+#6 [portal internal] load .dockerignore
+#6 transferring context: 2B done
+#6 DONE 0.0s
+
+#7 [api internal] load .dockerignore
+#7 transferring context: 64B done
+#7 DONE 0.0s
+
+#8 [portal internal] load build context
+#8 transferring context: 3.78kB done
+#8 DONE 0.0s
+
+#9 [api internal] load build context
+#9 transferring context: 4.77kB done
+#9 DONE 0.0s
+
+#10 [api 1/4] FROM docker.io/library/node:24-alpine@sha256:ebfe2f90462722a7a4de65e91990e97fe0d401c70e0e762c5b53302f905ec1c1
+#10 resolve docker.io/library/node:24-alpine@sha256:ebfe2f90462722a7a4de65e91990e97fe0d401c70e0e762c5b53302f905ec1c1 0.0s done
+#10 DONE 0.1s
+
+#11 [portal 1/3] FROM docker.io/library/nginx:alpine@sha256:df221db836e1754089190208cee7eeda94f233197056426eda74a43ab1abeac2
+#11 resolve docker.io/library/nginx:alpine@sha256:df221db836e1754089190208cee7eeda94f233197056426eda74a43ab1abeac2 0.0s done
+#11 sha256:e72112c14215406dc7f23ef8e5cfdfddeb8662176167382ad64ec86f52b7a88e 0B / 20.53MB 0.2s
+#11 sha256:e72112c14215406dc7f23ef8e5cfdfddeb8662176167382ad64ec86f52b7a88e 1.05MB / 20.53MB 0.3s
+#11 sha256:e72112c14215406dc7f23ef8e5cfdfddeb8662176167382ad64ec86f52b7a88e 4.19MB / 20.53MB 0.5s
+#11 sha256:e76228b47809e8a4bd37a6ba52a04d282d8c72ddf0ff9e8b83fd6318631abd52 0B / 1.40kB 0.2s
+#11 sha256:e72112c14215406dc7f23ef8e5cfdfddeb8662176167382ad64ec86f52b7a88e 6.29MB / 20.53MB 0.6s
+#11 sha256:e72112c14215406dc7f23ef8e5cfdfddeb8662176167382ad64ec86f52b7a88e 9.44MB / 20.53MB 0.8s
+#11 sha256:e76228b47809e8a4bd37a6ba52a04d282d8c72ddf0ff9e8b83fd6318631abd52 1.40kB / 1.40kB 0.5s done
+#11 sha256:64c8194480fee2c03e01cc561cf5542733627d2c7de493a028139677025f975c 1.21kB / 1.21kB 0.2s done
+#11 sha256:e72112c14215406dc7f23ef8e5cfdfddeb8662176167382ad64ec86f52b7a88e 12.58MB / 20.53MB 0.9s
+#11 sha256:9a9a644fdd6a3681d43dace44c8cfef374cfd7b24f433113379ea483692498a8 404B / 404B 0.2s done
+#11 sha256:e72112c14215406dc7f23ef8e5cfdfddeb8662176167382ad64ec86f52b7a88e 15.73MB / 20.53MB 1.1s
+#11 sha256:745dfb2690dd8627e1593941caccc756f14943df7930a478beb4e808c5695cb9 0B / 965B 0.2s
+#11 sha256:6c53d0b2a666ed8f8fad8d9982e30cf24eb085036c17b27591665ca25e1ba40c 0B / 629B 0.2s
+#11 sha256:e72112c14215406dc7f23ef8e5cfdfddeb8662176167382ad64ec86f52b7a88e 20.53MB / 20.53MB 1.3s done
+#11 sha256:745dfb2690dd8627e1593941caccc756f14943df7930a478beb4e808c5695cb9 965B / 965B 0.3s done
+#11 sha256:6c53d0b2a666ed8f8fad8d9982e30cf24eb085036c17b27591665ca25e1ba40c 629B / 629B 0.3s done
+#11 sha256:d9aae54b58315e84b9c3ac5f00bad6610e0e28ad9ff28fcde694647e0be13131 1.93MB / 1.93MB 0.3s
+#11 sha256:d9aae54b58315e84b9c3ac5f00bad6610e0e28ad9ff28fcde694647e0be13131 1.93MB / 1.93MB 0.3s done
+#11 extracting sha256:d9aae54b58315e84b9c3ac5f00bad6610e0e28ad9ff28fcde694647e0be13131 0.1s done
+#11 extracting sha256:6c53d0b2a666ed8f8fad8d9982e30cf24eb085036c17b27591665ca25e1ba40c 0.0s done
+#11 extracting sha256:745dfb2690dd8627e1593941caccc756f14943df7930a478beb4e808c5695cb9 0.0s done
+#11 DONE 1.8s
+
+#10 [api 1/4] FROM docker.io/library/node:24-alpine@sha256:ebfe2f90462722a7a4de65e91990e97fe0d401c70e0e762c5b53302f905ec1c1
+#10 sha256:7ce7dcbafb7f750cf0c6be3c30e34372b06dd1182fa67f6ae30782c8150c5444 444B / 444B 0.2s done
+#10 sha256:02f40d53b06f6b91fec0cd6a6719656da99270bff8ee54ed8dcdf4c157763fc1 1.26MB / 1.26MB 0.5s done
+#10 sha256:3c504d5a797be28f9de43147d49cd8ecb2eea46dfaf7beb8715db695d5f0a7f0 19.92MB / 56.52MB 1.7s
+#10 sha256:e2de96513ba9eb53b431787ec8a65cdde380ac4772a3e4c4b714dcfde2a102b5 3.85MB / 3.85MB 0.8s done
+#10 extracting sha256:e2de96513ba9eb53b431787ec8a65cdde380ac4772a3e4c4b714dcfde2a102b5 0.1s done
+#10 sha256:3c504d5a797be28f9de43147d49cd8ecb2eea46dfaf7beb8715db695d5f0a7f0 25.17MB / 56.52MB 2.0s
+#10 ...
+
+#11 [portal 1/3] FROM docker.io/library/nginx:alpine@sha256:df221db836e1754089190208cee7eeda94f233197056426eda74a43ab1abeac2
+#11 extracting sha256:9a9a644fdd6a3681d43dace44c8cfef374cfd7b24f433113379ea483692498a8 0.0s done
+#11 extracting sha256:64c8194480fee2c03e01cc561cf5542733627d2c7de493a028139677025f975c 0.0s done
+#11 extracting sha256:e76228b47809e8a4bd37a6ba52a04d282d8c72ddf0ff9e8b83fd6318631abd52 0.0s done
+#11 extracting sha256:e72112c14215406dc7f23ef8e5cfdfddeb8662176167382ad64ec86f52b7a88e 0.3s done
+#11 DONE 2.2s
+
+#12 [portal 2/3] COPY default.conf.template /etc/nginx/templates/default.conf.template
+#12 DONE 0.1s
+
+#10 [api 1/4] FROM docker.io/library/node:24-alpine@sha256:ebfe2f90462722a7a4de65e91990e97fe0d401c70e0e762c5b53302f905ec1c1
+#10 sha256:3c504d5a797be28f9de43147d49cd8ecb2eea46dfaf7beb8715db695d5f0a7f0 28.31MB / 56.52MB 2.1s
+#10 ...
+
+#13 [portal 3/3] COPY index.html /usr/share/nginx/html/index.html
+#13 DONE 0.0s
+
+#10 [api 1/4] FROM docker.io/library/node:24-alpine@sha256:ebfe2f90462722a7a4de65e91990e97fe0d401c70e0e762c5b53302f905ec1c1
+#10 sha256:3c504d5a797be28f9de43147d49cd8ecb2eea46dfaf7beb8715db695d5f0a7f0 31.46MB / 56.52MB 2.3s
+#10 sha256:3c504d5a797be28f9de43147d49cd8ecb2eea46dfaf7beb8715db695d5f0a7f0 34.60MB / 56.52MB 2.6s
+#10 sha256:3c504d5a797be28f9de43147d49cd8ecb2eea46dfaf7beb8715db695d5f0a7f0 37.75MB / 56.52MB 2.7s
+#10 ...
+
+#14 [portal] exporting to image
+#14 exporting layers 0.1s done
+#14 exporting manifest sha256:6ac78f48a237123af47a9134af63bcc04018734d0933cc787963cdce92d83614 done
+#14 exporting config sha256:44904faea1207cd4210f193ebf64cc667eadf5c77752c27553e2adf56894709d done
+#14 exporting attestation manifest sha256:6a4f5d2135cc7ccc2f8f3f78cf3065fc6969ff273f18cf6dc9ef1d001b8c7448 0.0s done
+#14 exporting manifest list sha256:f5bc714220ea78c0592c99225509fd25f5068782d73b9dd6a2c829b6e7450e2d done
+#14 naming to docker.io/library/turma-a-portal:latest done
+#14 unpacking to docker.io/library/turma-a-portal:latest 0.5s done
+#14 DONE 0.7s
+
+#15 [portal] resolving provenance for metadata file
+#15 DONE 0.0s
+
+#10 [api 1/4] FROM docker.io/library/node:24-alpine@sha256:ebfe2f90462722a7a4de65e91990e97fe0d401c70e0e762c5b53302f905ec1c1
+#10 sha256:3c504d5a797be28f9de43147d49cd8ecb2eea46dfaf7beb8715db695d5f0a7f0 45.09MB / 56.52MB 3.2s
+#10 sha256:3c504d5a797be28f9de43147d49cd8ecb2eea46dfaf7beb8715db695d5f0a7f0 48.23MB / 56.52MB 3.5s
+#10 sha256:3c504d5a797be28f9de43147d49cd8ecb2eea46dfaf7beb8715db695d5f0a7f0 52.43MB / 56.52MB 3.8s
+#10 sha256:3c504d5a797be28f9de43147d49cd8ecb2eea46dfaf7beb8715db695d5f0a7f0 56.52MB / 56.52MB 4.1s done
+#10 extracting sha256:3c504d5a797be28f9de43147d49cd8ecb2eea46dfaf7beb8715db695d5f0a7f0
+#10 extracting sha256:3c504d5a797be28f9de43147d49cd8ecb2eea46dfaf7beb8715db695d5f0a7f0 0.8s done
+#10 DONE 4.9s
+
+#10 [api 1/4] FROM docker.io/library/node:24-alpine@sha256:ebfe2f90462722a7a4de65e91990e97fe0d401c70e0e762c5b53302f905ec1c1
+#10 extracting sha256:02f40d53b06f6b91fec0cd6a6719656da99270bff8ee54ed8dcdf4c157763fc1 0.0s done
+#10 extracting sha256:7ce7dcbafb7f750cf0c6be3c30e34372b06dd1182fa67f6ae30782c8150c5444 0.0s done
+#10 DONE 5.0s
+
+#16 [api 2/4] WORKDIR /app
+#16 DONE 0.1s
+
+#17 [api 3/4] COPY package.json server.ts ./
+#17 DONE 0.0s
+
+#18 [api 4/4] RUN mkdir -p /app/registros
+#18 DONE 0.2s
+
+#19 [api] exporting to image
+#19 exporting layers 0.1s done
+#19 exporting manifest sha256:c18c36ada0d00bac1d5111303cd76cc827b1d39b3ab49829f7facfb9f535341e done
+#19 exporting config sha256:40c2aca752d0304e2125a387da9b4ca6d6dc216195f09b8e631c8e0a3a75527e done
+#19 exporting attestation manifest sha256:370884990244da7a13bea5d895c4cfe14a1fde8ea767d551c3f21401e3ae1955 done
+#19 exporting manifest list sha256:a5404fe7895f6f2b9607723e8130dbc8b3e6b06e04328ef6f3248cded75fc520 done
+#19 naming to docker.io/library/turma-a-api:latest done
+#19 unpacking to docker.io/library/turma-a-api:latest
+#19 unpacking to docker.io/library/turma-a-api:latest 0.8s done
+#19 DONE 0.9s
+
+#20 [api] resolving provenance for metadata file
+#20 DONE 0.0s
+ Image turma-a-api Built 
+ Image turma-a-portal Built 
+ Network turma-a_default Creating 
+ Network turma-a_default Creating 
+ Network turma-a_default Created 
+ Network turma-a_default Created 
+ Container turma-a-api-1 Creating 
+ Container turma-a-api-1 Created 
+ Container turma-a-portal-1 Creating 
+ Container turma-a-portal-1 Created 
+ Container turma-a-api-1 Starting 
+ Container turma-a-api-1 Started 
+ Container turma-a-portal-1 Starting 
+ Container turma-a-portal-1 Started 
+
+### docker compose ps -a
+NAME               IMAGE            COMMAND                  SERVICE   CREATED         STATUS         PORTS
+turma-a-api-1      turma-a-api      "docker-entrypoint.s…"   api       6 seconds ago   Up 5 seconds   4000/tcp
+turma-a-portal-1   turma-a-portal   "/docker-entrypoint.…"   portal    6 seconds ago   Up 5 seconds   127.0.0.1:8082->80/tcp
+
+### docker compose logs api
+api-1  | {"evento":"inicio","porta":5000}
+
+### docker compose logs portal
+portal-1  | /docker-entrypoint.sh: /docker-entrypoint.d/ is not empty, will attempt to perform configuration
+portal-1  | /docker-entrypoint.sh: Looking for shell scripts in /docker-entrypoint.d/
+portal-1  | /docker-entrypoint.sh: Launching /docker-entrypoint.d/10-listen-on-ipv6-by-default.sh
+portal-1  | 10-listen-on-ipv6-by-default.sh: info: Getting the checksum of /etc/nginx/conf.d/default.conf
+portal-1  | 10-listen-on-ipv6-by-default.sh: info: Enabled listen on IPv6 in /etc/nginx/conf.d/default.conf
+portal-1  | /docker-entrypoint.sh: Sourcing /docker-entrypoint.d/15-local-resolvers.envsh
+portal-1  | /docker-entrypoint.sh: Launching /docker-entrypoint.d/20-envsubst-on-templates.sh
+portal-1  | 20-envsubst-on-templates.sh: Running envsubst on /etc/nginx/templates/default.conf.template to /etc/nginx/conf.d/default.conf
+portal-1  | /docker-entrypoint.sh: Launching /docker-entrypoint.d/30-tune-worker-processes.sh
+portal-1  | /docker-entrypoint.sh: Configuration complete; ready for start up
+portal-1  | 2026/10/09 00:37:53 [notice] 1#1: using the "epoll" event method
+portal-1  | 2026/10/09 00:37:53 [notice] 1#1: nginx/1.31.6
+portal-1  | 2026/10/09 00:37:53 [notice] 1#1: built by gcc 15.2.0 (Alpine 15.2.0) 
+portal-1  | 2026/10/09 00:37:53 [notice] 1#1: OS: Linux 6.18.40.1-microsoft-standard-WSL2
+portal-1  | 2026/10/09 00:37:53 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+portal-1  | 2026/10/09 00:37:53 [notice] 1#1: start worker processes
+portal-1  | 2026/10/09 00:37:53 [notice] 1#1: start worker process 36
+portal-1  | 2026/10/09 00:37:53 [notice] 1#1: start worker process 37
+portal-1  | 2026/10/09 00:37:53 [notice] 1#1: start worker process 38
+portal-1  | 2026/10/09 00:37:53 [notice] 1#1: start worker process 39
+portal-1  | 2026/10/09 00:37:53 [notice] 1#1: start worker process 40
+portal-1  | 2026/10/09 00:37:53 [notice] 1#1: start worker process 41
+portal-1  | 2026/10/09 00:37:53 [notice] 1#1: start worker process 42
+portal-1  | 2026/10/09 00:37:53 [notice] 1#1: start worker process 43
+portal-1  | 2026/10/09 00:37:53 [notice] 1#1: start worker process 44
+portal-1  | 2026/10/09 00:37:53 [notice] 1#1: start worker process 45
+portal-1  | 2026/10/09 00:37:53 [notice] 1#1: start worker process 46
+portal-1  | 2026/10/09 00:37:53 [notice] 1#1: start worker process 47
+
+### curl http://localhost:8082/ (status)
+200
+
+### curl http://localhost:8082/api/saude
+HTTP/1.1 502 Bad Gateway
+Server: nginx/1.31.6
+Date: Fri, 09 Oct 2026 00:37:59 GMT
+Content-Type: text/html
+Content-Length: 157
+Connection: keep-alive
+
+<html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>nginx/1.31.6</center>
+</body>
+</html>
+
+### curl http://localhost:8082/api/eventos
+HTTP/1.1 502 Bad Gateway
+Server: nginx/1.31.6
+Date: Fri, 09 Oct 2026 00:37:59 GMT
+Content-Type: text/html
+Content-Length: 157
+Connection: keep-alive
+
+<html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>nginx/1.31.6</center>
+</body>
+</html>
+
+### curl http://localhost:8082/api/inscricoes
+HTTP/1.1 502 Bad Gateway
+Server: nginx/1.31.6
+Date: Fri, 09 Oct 2026 00:38:00 GMT
+Content-Type: text/html
+Content-Length: 157
+Connection: keep-alive
+
+<html>
+<head><title>502 Bad Gateway</title></head>
+<body>
+<center><h1>502 Bad Gateway</h1></center>
+<hr><center>nginx/1.31.6</center>
+</body>
+</html>
+
+### docker compose logs portal (apos os pedidos, so erros/acessos)
+
+portal-1  | 10-listen-on-ipv6-by-default.sh: info: Getting the checksum of /etc/nginx/conf.d/default.conf
+portal-1  | 2026/10/09 00:37:53 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+portal-1  | 172.18.0.1 - - [09/Oct/2026:00:37:59 +0000] "GET / HTTP/1.1" 200 3418 "-" "curl/8.21.0" "-"
+portal-1  | 2026/10/09 00:37:59 [error] 37#37: *2 localhost could not be resolved (3: Host not found), client: 172.18.0.1, server: , request: "GET /api/saude HTTP/1.1", host: "localhost:8082"
+portal-1  | 172.18.0.1 - - [09/Oct/2026:00:37:59 +0000] "GET /api/saude HTTP/1.1" 502 157 "-" "curl/8.21.0" "-"
+portal-1  | 2026/10/09 00:37:59 [error] 40#40: *4 localhost could not be resolved (3: Host not found), client: 172.18.0.1, server: , request: "GET /api/eventos HTTP/1.1", host: "localhost:8082"
+portal-1  | 172.18.0.1 - - [09/Oct/2026:00:37:59 +0000] "GET /api/eventos HTTP/1.1" 502 157 "-" "curl/8.21.0" "-"
+portal-1  | 172.18.0.1 - - [09/Oct/2026:00:38:00 +0000] "GET /api/inscricoes HTTP/1.1" 502 157 "-" "curl/8.21.0" "-"
+portal-1  | 2026/10/09 00:38:00 [error] 39#39: *6 localhost could not be resolved (3: Host not found), client: 172.18.0.1, server: , request: "GET /api/inscricoes HTTP/1.1", host: "localhost:8082"
+
+
+### config gerada pelo nginx (docker compose exec portal cat /etc/nginx/conf.d/default.conf)
+server {
+    listen 80;
+    resolver 127.0.0.11 valid=5s;
+
+    location / {
+        root /usr/share/nginx/html;
+        index index.html;
+    }
+
+    location /api/ {
+        set $destino http://localhost:4000;
+        rewrite ^/api/(.*)$ /$1 break;
+        proxy_pass $destino;
+    }
+}
+
+### variavel API_URL dentro do portal
+http://localhost:4000
+
+### a API responde por dentro? (portal -> api:4000 e api:5000)
+wget: can't connect to remote host (172.18.0.2): Connection refused
+
+{
+  "status": "ok",
+  "turma": "A"
+}
+
+### a API ve os dados e a pasta registros? (docker compose exec api ls -la /app /app/dados /app/registros)
+/app:
+total 24
+drwxr-xr-x    1 root     root          4096 Oct  9 00:37 .
+drwxr-xr-x    1 root     root          4096 Oct  9 00:37 ..
+drwxrwxrwx    1 root     root           512 Oct  9 00:08 dados
+-rwxr-xr-x    1 root     root            83 Oct  9 00:08 package.json
+drwxr-xr-x    2 root     root          4096 Oct  9 00:37 registros
+-rwxr-xr-x    1 root     root          4604 Oct  9 00:08 server.ts
+
+/app/dados:
+total 4
+drwxrwxrwx    1 root     root           512 Oct  9 00:08 .
+drwxr-xr-x    1 root     root          4096 Oct  9 00:37 ..
+-rwxrwxrwx    1 root     root           218 Oct  9 00:08 eventos.json
+
+/app/registros:
+total 8
+drwxr-xr-x    2 root     root          4096 Oct  9 00:37 .
+drwxr-xr-x    1 root     root          4096 Oct  9 00:37 ..
+
